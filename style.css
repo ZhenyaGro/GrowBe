@@ -1,6 +1,20 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('./font/Gilroy-Semibold.woff2') format('./font/woff2'),
+    url('./font/Gilroy-Semibold.woff') format('woff'),
+    url('./font/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Gilroy', serif;
 }
 
 a {
@@ -9,19 +23,51 @@ a {
 }
 
 .container {
-  margin: 0 auto;
-  max-width: 1170px;
+  padding-left: calc(50% - 585px);
+  padding-right: calc(50% - 585px);
 }
 
-.logo-name {
-  display: block;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 84px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .logo-name_text {
   font-size: 24px;
   line-height: 28px;
-  margin-left: 14px;
 }
+
+.header_nav {
+  display: flex;
+}
+
+.header_link {
+  padding: 12px 17px;
+}
+
+.header_link:hover {
+  background-color: gainsboro;
+}
+
+.header_nav a:first-child {
+  color: #F25822;
+}
+
+/* How?
+.header_nav a:last-child {
+  padding-right: 0;
+} */
 
 .brand-color {
   color: #F25822;
@@ -29,15 +75,6 @@ a {
 
 .top_content {
   margin-bottom: 259px;
-}
-
-.top_header {
-  margin-top: 40px;
-  margin-bottom: 84px;
-  padding-top: 11px;
-  padding-bottom: 12px;
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .top_content_header {
@@ -74,8 +111,4 @@ a {
 
 .top_content_image {
   margin-left: 41px;
-}
-
-.links a:first-child {
-  color: #F25822;
 }
