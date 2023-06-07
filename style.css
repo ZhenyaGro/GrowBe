@@ -48,17 +48,12 @@ a {
 }
 
 .header_link:hover {
-  background-color: gainsboro;
-}
-
-.header_nav a:first-child {
   color: #F25822;
 }
 
-/* How?
 .header_nav a:last-child {
   padding-right: 0;
-} */
+}
 
 .brand-color {
   color: #F25822;
